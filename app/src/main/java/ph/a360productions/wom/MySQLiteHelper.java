@@ -9,6 +9,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
     // Books table name
@@ -104,7 +107,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
                 db.query(TABLE_OFFERS, // a. table
                         COLUMNS, // b. column names
                         " id = ?", // c. selections
-                        new String[] { String.valueOf(id) }, // d. selections args
+                        new String[]{String.valueOf(id)}, // d. selections args
                         null, // e. group by
                         null, // f. having
                         null, // g. order by
@@ -133,5 +136,89 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
         // 5. return book
         return offer;
+    }
+    public List<Offer> getAllOffers() {
+        List<Offer> offers = new LinkedList<Offer>();
+
+        // 1. build the query
+        String query = "SELECT  * FROM " + TABLE_OFFERS;
+
+        // 2. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+
+        // 3. go over each row, build book and add it to list
+        Offer offer = null;
+        if (cursor.moveToFirst()) {
+            do {
+                offer = new Offer();
+                offer.setId(Integer.parseInt(cursor.getString(0)));
+                offer.setBrand(cursor.getString(1));
+                offer.setOffer_name(cursor.getString(2));
+                offer.setDescription(cursor.getString(3));
+                offer.setPrice(cursor.getString(4));
+                offer.setValidity(cursor.getString(5));
+                offer.setKeyword(cursor.getString(6));
+                offer.setAccess_code(cursor.getString(7));
+                //book.setTitle(cursor.getString(1));
+                //book.setAuthor(cursor.getString(2));
+
+                // Add book to books
+                offers.add(offer);
+            } while (cursor.moveToNext());
+        }
+
+        Log.d("getAllOffers()", offers.toString());
+
+        // return books
+        return offers;
+    }
+
+    public int updateOffer(Offer offer) {
+
+        // 1. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // 2. create ContentValues to add key "column"/value
+        ContentValues values = new ContentValues();
+       // values.put("title", book.getTitle()); // get title
+        //values.put("author", book.getAuthor()); // get author
+        values.put("brand",offer.getBrand());
+        values.put("offer_name", offer.getOffer_name());
+        values.put("description", offer.getDescription());
+        values.put("price", offer.getPrice());
+        values.put("validity", offer.getValidity());
+        values.put("keyword", offer.getKeyword());
+        values.put("access_code", offer.getAccess_code());
+
+        // 3. updating row
+        int i = db.update(TABLE_OFFERS, //table
+                values, // column/value
+                KEY_ID+" = ?", // selections
+                new String[] { String.valueOf(offer.getId()) }); //selection args
+
+        // 4. close
+        db.close();
+
+        return i;
+
+    }
+
+    public void deleteOffer(Offer offer) {
+
+        // 1. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // 2. delete
+        db.delete(TABLE_OFFERS, //table name
+                KEY_ID+" = ?",  // selections
+                new String[] { String.valueOf(offer.getId()) }); //selections args
+
+        // 3. close
+        db.close();
+
+        //log
+        Log.d("deleteOffer", offer.toString());
+
     }
 }
