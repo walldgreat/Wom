@@ -25,12 +25,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     private static final String KEY_BRAND = "brand";
     private static final String KEY_OFFER_NAME = "offer_name";
     private static final String KEY_DESCRIPTION = "description";
-    private static final String KEY_OFFER="offer";
+    private static final String KEY_PRICE="price";
     private static final String KEY_VALIDITY="validity";
     private static final String KEY_KEYWORD = "keyword";
     private static final String KEY_ACCESS_CODE = "access_code";
 
-    private static final String[] COLUMNS = {KEY_ID,KEY_BRAND, KEY_OFFER_NAME, KEY_DESCRIPTION, KEY_OFFER, KEY_KEYWORD, KEY_ACCESS_CODE};
+    private static final String[] COLUMNS = {KEY_ID,KEY_BRAND, KEY_OFFER_NAME, KEY_DESCRIPTION, KEY_PRICE, KEY_KEYWORD, KEY_ACCESS_CODE};
 
 
     // Database Version
@@ -84,7 +84,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     values.put(KEY_BRAND      , offer.getBrand());
     values.put(KEY_OFFER_NAME , offer.getOffer_name());
     values.put(KEY_DESCRIPTION, offer.getDescription());
-    values.put(KEY_OFFER      , offer.getPrice());
+    values.put(KEY_PRICE     , offer.getPrice());
     values.put(KEY_VALIDITY   , offer.getValidity());
     values.put(KEY_KEYWORD    , offer.getKeyword     ());
     values.put(KEY_ACCESS_CODE, offer.getAccess_code ());
