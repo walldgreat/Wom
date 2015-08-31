@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/classes-6f4e1283d6a4c28dd9cbf70a428db45ecbed9572.jar" />
-    </item>
-    <item
         jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
         <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/classes-0a953b898f1dd36aa78d55f978c7609622d8bb66.jar" />
+    </item>
+    <item
+        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/classes-6f4e1283d6a4c28dd9cbf70a428db45ecbed9572.jar" />
     </item>
     <item
         jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"

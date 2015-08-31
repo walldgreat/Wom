@@ -18,12 +18,12 @@ public class Offer {
 
     public Offer(){}
 
-    public Offer(String title, String author) {
+    public Offer(String brand, String offer_name, String description, String price, String validity, String keyword, String access_code) {
         super();
     //    this.title = title;
     //    this.author = author;
 
-                this.brand=brand;
+        this.brand=brand;
         this.offer_name=offer_name;
         this.description=description;
         this.price=price;
