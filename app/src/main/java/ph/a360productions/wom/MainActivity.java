@@ -2,6 +2,7 @@ package ph.a360productions.wom;
 
 import android.content.Intent;
 
+import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.graphics.Color;
@@ -56,9 +57,22 @@ public class MainActivity extends AppCompatActivity {
            db.addOffer(
                    new Offer("SMART",
                            "ALL TXT 20", " 4 day of unli txt to all network that you cant text",
-                           "20.00", "5 days", "ALLTXT20", "234") );
+                           "20.00", "5 days", "ALLTXT20", "234"));
         List<Offer> list = db.getAllOffers();
         Log.d("verlin", list.toString());
+
+        TableLayout mTlayout =
+                (TableLayout) findViewById(R.id.tablelayout1);
+
+        TableRow mTablerow =
+                (TableRow) findViewById(R.id.tablerow1);
+        TableRow mTablerow1 = new TableRow(this);
+
+        LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.tablerowlayout, mTlayout);
+        inflater.inflate(R.layout.tablerowlayout, mTlayout);
+        inflater.inflate(R.layout.tablerowlayout, mTlayout);
+        //mTlayout.addView(mTablerow1);
 // programmatic start
         /*
         LinearLayout layout = new LinearLayout(this);
