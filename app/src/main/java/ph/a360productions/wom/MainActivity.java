@@ -2,6 +2,7 @@ package ph.a360productions.wom;
 
 import android.content.Intent;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -54,25 +55,76 @@ public class MainActivity extends AppCompatActivity {
 
         MySQLiteHelper db = new MySQLiteHelper(this);
 
+/*
            db.addOffer(
                    new Offer("SMART",
                            "ALL TXT 20", " 4 day of unli txt to all network that you cant text",
                            "20.00", "5 days", "ALLTXT20", "234"));
+*/
+
+
+
+
+
         List<Offer> list = db.getAllOffers();
-        Log.d("verlin", list.toString());
+
+        for(int i=0; i<list.size();i++)
+        {
+            Log.d("verlin",list.get(i).getDescription());
+            Log.d("verlin", list.get(i).getPrice());
+            Log.d("verlin", list.get(i).getOffer_name());
+
+        }
+        //Log.d("verlin", list.toString());
 
         TableLayout mTlayout =
                 (TableLayout) findViewById(R.id.tablelayout1);
 
-        TableRow mTablerow =
-                (TableRow) findViewById(R.id.tablerow1);
-        TableRow mTablerow1 = new TableRow(this);
 
+        View view[]= new View[100];
+        int i;
+        View view2;
+        TextView mProductName1,mDescription1, mPrice1;
+        TextView mProductName2,mDescription2, mPrice2;
+        Button mButton1, mButton2;
+
+        TextView item2;
         LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.tablerowlayout, mTlayout);
-        inflater.inflate(R.layout.tablerowlayout, mTlayout);
-        inflater.inflate(R.layout.tablerowlayout, mTlayout);
-        //mTlayout.addView(mTablerow1);
+
+        for( i=0; i<list.size();i=i+2)
+
+         {
+            view[i] = inflater.inflate(R.layout.tablerowlayout, null);
+            mProductName1 = (TextView) view[i].findViewById(R.id.textViewProductName1);
+            mProductName1.setText(list.get(i).getOffer_name());
+            mDescription1 = (TextView) view[i].findViewById(R.id.textViewDescription1);
+            mDescription1.setText(list.get(i).getDescription());
+             mDescription1.setMaxLines(3);
+             mDescription1.setEllipsize(TextUtils.TruncateAt.END);
+             //mDescription1.setHorizontallyScrolling(true);
+            mPrice1 = (TextView) view[i].findViewById(R.id.textViewPrice1);
+            mPrice1.setText(list.get(i).getPrice());
+            mButton1 = (Button) view[i].findViewById(R.id.buttonBuy1);
+            //mButton1.setTag(i);
+
+             try {
+                 mProductName2 = (TextView) view[i].findViewById(R.id.textViewProductName2);
+                 mProductName2.setText(list.get(i + 1).getOffer_name());
+                 mDescription2 = (TextView) view[i].findViewById(R.id.textViewDescription2);
+                 mDescription2.setText(list.get(i + 1).getDescription());
+                 mDescription2.setMaxLines(3);
+                 mDescription2.setEllipsize(TextUtils.TruncateAt.END);
+                 mPrice2 = (TextView) view[i].findViewById(R.id.textViewPrice2);
+                 mPrice2.setText(list.get(i + 1).getPrice());
+                 mButton2 = (Button) view[i].findViewById(R.id.buttonBuy2);
+             }
+             catch( Exception e)
+             {
+// quick dirty way to avoid problem
+             }
+
+            mTlayout.addView(view[i]);
+        }
 // programmatic start
         /*
         LinearLayout layout = new LinearLayout(this);

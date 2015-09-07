@@ -47,17 +47,60 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         // SQL statement to create book table
         String CREATE_OFFER_TABLE = "CREATE TABLE offers ( " +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "brand TEXT, "+
-                "offer_name TEXT, "+
-                "description TEXT, "+
-                "price TEXT, "+
-                "validity TEXT, "+
-                "keyword TEXT, "+
+                "brand TEXT, " +
+                "offer_name TEXT, " +
+                "description TEXT, " +
+                "price TEXT, " +
+                "validity TEXT, " +
+                "keyword TEXT, " +
                 "access_code TEXT) ";
 
 
         // create books table
         db.execSQL(CREATE_OFFER_TABLE);
+        try {
+
+            ContentValues values = new ContentValues();
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 25','Unlimited calls to Smart/TNT Unlimited texts to Smart/TNT/Sun 50 texts to all networks FREE chat & surf (up to 15MB)','Php 25.00','1 day','UNLI25','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 30 Plus','Unlimited calls to Smart/Sun/TNT Unlimited texts to all networks Free Spinnr & Surf (up to 100MB)','Php 30.00','1 day','UNLI30','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 35','Unlimited calls and texts to Smart/TNT/Sun 150 texts to all networks','Php 35.00','1 day','UNLI35','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 50','Unlimited calls to Smart/TNT/Sun Unlimited texts to all networks 50 MB of surfing','Php 50.00','3 days','UCT50','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 100','Unlimited calls and texts to Smart/TNT 80 texts to all networks','Php 100.00','4 days','UNLI100','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 150','Unlimited calls and texts to Smart/TNT 100 texts to all networks','Php 150.00','7 days','UNLI150','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 200','Unlimited calls and texts to Smart/TNT 500 texts to all networks','Php 200.00','7 days','UNLI200','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 299','Unlimited calls and texts to Smart/TNT 150 texts to all networks','Php 299.00','15 days','UNLI299','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 400','Unlimited calls and texts to Smart/TNT 1000 texts to all networks','Php 400.00','15 days','UNLI400','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 600','Unlimited calls and texts to Smart/TNT 2000 texts to all networks','Php 600.00','30 days','UNLI600','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call 20','Unlimited calls to Smart/TNT Unlimited Twitter 20 texts to all networks FREE internet','Php 20.00','1 day','UNLI20','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 15','Unlimited texts to Smart/TNT/Sun','Php 15.00','1 day','TRINET15','2477')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 30','10MB 200 All-net texts 50 minute calls','Php 30.00','1 day','TRINET30','2477')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 40','Unlimited call and texts to Smart/TNT/Sun Unli Facebook','Php 40.00','1 day','TRINET40 to 2949','2477')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 100','35MB 750 All-net texts 120 minute calls','Php 100.00','7 days','TRINET100','2477')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 200','75MB 1500 All-net texts 250 minute calls','Php 200.00','15 days','TRINET200','2477')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 300','30MB Unli text to Smart/TNT/Sun 300 minute calls 3 Hours mobile internet for Sun','Php 300.00','30 days','TRINET300','2477')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Smartalk 100','Unli calls to Smart/TNT','Php 100.00','5 days','TALK100','6400')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Smartalk 500','Unli calls to Smart/TNT','Php 500.00','30 days','TALK500','6400')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Lahatxt 20','250 SMS to all networks 10 mins calls to Smart/TNT','Php 20.00','1 day','L20','2266')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Lahatxt 30','300 SMS to all networks 20 mins calls to Smart/TNT','Php 30.00','2 days','L30','2266')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Text P15','All net text','Php 15.00','2 days','JUMPTXT15','5867')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Out P15','10MB 30 mins TRI-NET calls to 5 Smart/TNT/Sun Unlimited texts to all networks FREE Unli Facebook','Php 15.00','1 day','JUMP15','5867')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Out P25','10MB 30 mins TRI-NET calls to 5 Smart/TNT/Sun Unlimited texts to all networks FREE Unli Facebook','Php 25.00','2 days','JUMP15','5867')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Out P50','10MB 30 mins TRI-NET calls to 5 Smart/TNT/Sun Unlimited texts to all networks FREE Unli Facebook','Php 50.00','5 days','JUMP50','5867')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Unli Text 50','Unlimited tri-net texts','Php 50.00','7 days','TEXT50','6406 SMART','Big Unli Text 100','Unlimited tri-net texts','Php 100.00','15 days','TEXT100','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Unli Text 200','Unlimited tri-net texts','Php 200.00','30 days','TEXT200','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Calls 100','200 minutes of calls to Smart/TNT','Php 100.00','7 days','CALL100','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Calls 200','450 minutes of calls to Smart/TNT','Php 200.00','15 days','CALL200','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Calls 400','950 minutes of calls to Smart/TNT','Php 200.00','30 days','CALL400','6406')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 15','150 texts to all networks and 5 minutes calls to Smart/TNT','Php 15.00','1 day','AT15','2827')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 20','Unli All-net texts',' plus 20 minutes of calls to Smart/TNT','Php 20.00','1 day','AT20','2827')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 30','Unli All-net texts',' plus 30 minutes of calls to Smart/TNT','Php 30.00','2 days','AT30','2827')");
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All-Net SOS','On-Net OR All-Net SMS','3 SMART-to-SMART/TNT texts with P1.00-airtime 4 texts to all networks with P1.00 airport','','Dial *7572 to avail','2827')");
+
+        }
+        catch (Exception e) {
+
+
+        }
     }
 
     @Override

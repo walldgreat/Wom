@@ -15,12 +15,14 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Most Wanted"
         android:id="@+id/textView5"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:visibility="gone" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/horizontalScrollView" >
+        android:id="@+id/horizontalScrollView"
+        android:visibility="gone">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -33,7 +35,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/cel_shape"
+                android:background="@drawable/cel_shape2"
                 android:padding="5dp">
 
                 <TextView
@@ -130,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Promos"
+        android:text="SMART Promos"
         android:id="@+id/textView5"
         android:singleLine="true" />
 
@@ -244,107 +246,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tablelayout1">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tablerow1">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cel_shape"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Unli Call &amp; Text 100"
-                        android:id="@+id/textView3"
-                        android:clickable="false"
-                        android:textColor="#3753ff"
-                        android:textSize="20dp"
-                        android:textIsSelectable="true"
-                        android:typeface="normal"
-                        android:layout_gravity="center_horizontal" />
-
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="80dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="4 days of unlicall call &amp; text to SMART/TNT valid for 4 days"
-                        android:id="@+id/textView4"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"
-                        android:textColor="#080609"
-                        android:paddingEnd="2dp" />
-
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BUY"
-                        android:id="@+id/button"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"
-                        android:width="100dp"
-                        android:clickable="true" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cel_shape"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Unli Call &amp; Text 100"
-                        android:id="@+id/textView3"
-                        android:clickable="false"
-                        android:textColor="#3753ff"
-                        android:textSize="20dp"
-                        android:textIsSelectable="true"
-                        android:typeface="normal"
-                        android:layout_gravity="center_horizontal" />
-
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="80dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="4 days of unlicall call &amp; text to SMART/TNT valid for 4 days"
-                        android:id="@+id/textView4"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"
-                        android:textColor="#080609"
-                        android:paddingEnd="2dp" />
-
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BUY"
-                        android:id="@+id/button"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"
-                        android:width="100dp"
-                        android:clickable="true" />
-
-                </LinearLayout>
-
-            </TableRow>
 
         </TableLayout>
     </ScrollView>
