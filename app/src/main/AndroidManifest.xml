@@ -32,6 +32,7 @@
                     "android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+        <activity android:name=".SimpleActivity" android:label="Wom2"/>
 
     </application>
 

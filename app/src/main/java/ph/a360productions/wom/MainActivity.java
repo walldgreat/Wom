@@ -1,7 +1,9 @@
 package ph.a360productions.wom;
 
+import android.app.Activity;
 import android.content.Intent;
 
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
@@ -29,6 +31,7 @@ import android.content.Context;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
@@ -39,10 +42,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    MySQLiteHelper db;
+    Button btnOpenPopup ;
     TableLayout mTlayout;
     String[] mTextofButton = { "Dipak", "E", "I", "J", "L",
             "M", "G", "R", "N", "T", "H", "P",
@@ -53,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MySQLiteHelper db = new MySQLiteHelper(this);
+         db = new MySQLiteHelper(this);
 
 /*
            db.addOffer(
@@ -63,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 */
 
 
-
+        //btnOpenPopup = (Button)findViewById(R.id.);
 
 
         List<Offer> list = db.getAllOffers();
@@ -105,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
             mPrice1 = (TextView) view[i].findViewById(R.id.textViewPrice1);
             mPrice1.setText(list.get(i).getPrice());
             mButton1 = (Button) view[i].findViewById(R.id.buttonBuy1);
+             mButton1.setTag(list.get(i).getId());
+             //mButton1.setOnClickListener(onClickListener);
+             addListenerOnButton(mButton1);
             //mButton1.setTag(i);
 
              try {
@@ -117,6 +127,9 @@ public class MainActivity extends AppCompatActivity {
                  mPrice2 = (TextView) view[i].findViewById(R.id.textViewPrice2);
                  mPrice2.setText(list.get(i + 1).getPrice());
                  mButton2 = (Button) view[i].findViewById(R.id.buttonBuy2);
+                 mButton2.setTag(list.get(i+1).getId());
+                 //mButton2.setOnClickListener(onClickListener);
+                 addListenerOnButton(mButton2);
              }
              catch( Exception e)
              {
@@ -125,36 +138,32 @@ public class MainActivity extends AppCompatActivity {
 
             mTlayout.addView(view[i]);
         }
-// programmatic start
-        /*
-        LinearLayout layout = new LinearLayout(this);
-        layout.setOrientation(LinearLayout.VERTICAL);
-
-       setHeader(this, layout);
-        setBody(this, layout);
-
-        setContentView(layout);
-*/
-        /*
-        TableLayout mTlayout =
-                (TableLayout) findViewById(R.id.mTlayout1);
-        //mTlayout.removeAllViewsInLayout();
-
-
-        TableRow tr=new TableRow(this);
-        for(int i=0;i<mTextofButton.length;i++){
-            Button btn=new Button(this);
-            btn.setText(mTextofButton[i]);
-            tr.addView(btn);
-
-        }
-        mTlayout.addView(tr);
-        */
-        //programmati end
 
 
     }
+    public void addListenerOnButton(final Button mButton_parm) {
 
+        final Context context = this;
+
+        //button = (Button) findViewById(R.id.button1);
+
+        mButton_parm.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Offer mOffer;
+
+                Log.d("verlin_lai:", mButton_parm.getTag().toString());
+                mOffer=db.getOffer((int)mButton_parm.getTag());
+                Intent intent = new Intent(context, SimpleActivity.class);
+                startActivity(intent);
+
+
+            }
+
+        });
+
+    }
     private  boolean setBody(Context context, LinearLayout rlx) {
         String[] row = { "ROW1", "ROW2", "Row3", "Row4", "Row 5", "Row 6",
                 "Row 7" };
@@ -191,28 +200,10 @@ public class MainActivity extends AppCompatActivity {
         hsv.addView(tableLayout);
         sv.addView(hsv);
         rlx.addView(sv);
-        //rlx.addView(sv);
-        // creating LayoutParams
-        //ll.addView(rlx);
-        //setHeader(ll.getContext());
-        //setHeader(this);
-        //setContentView(ll);
-        // create params for widgets
-        // now create layout params
-        /*
-        LinearLayout.LayoutParams layoutParam = new
-                LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT );
-        rlx.setLayoutParams(params);
 
-// now add the layout
-        //this.addContentView(rlx, layoutParam);
-        this.addContentView(rlx, layoutParam);
-        */
         return true;
     }
-    private boolean setHeader(Context context, LinearLayout layout)
-    {
+    private boolean setHeader(Context context, LinearLayout layout) {
 
 // create params for widgets
         LinearLayout.LayoutParams params = new
@@ -277,18 +268,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-/*
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == TAKE_PHOTO_CODE && resultCode == RESULT_OK) {
-            Log.d("CameraDemo", "Pic saved");
-
-
-        }
-    }
-    */
 
     public void makeCellEmpty(TableLayout tableLayout, int rowIndex, int columnIndex) {
         // get row from table with rowIndex
@@ -312,6 +291,11 @@ public class MainActivity extends AppCompatActivity {
 
         textView.setText("Hello");
     }
+
+
+    // verlin s: 11122
+      //verlin e:11122
+
 
     private TableLayout createTableLayout(String [] rv, String [] cv,int rowCount, int columnCount) {
         // 1) Create a tableLayout and its params
@@ -368,55 +352,6 @@ public class MainActivity extends AppCompatActivity {
 
         return tableLayout;
     }
+
+
 }// end class
-
-/*
-{
-
-        final TextView textElement = (TextView) findViewById(R.id.header1);
-
-        final Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                TelephonyManager telm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-                GsmCellLocation cellLocation = (GsmCellLocation) telm.getCellLocation();
-
-                String new_cid = String.valueOf(cellLocation.getCid() & 0xffff);
-                String new_lac = String.valueOf(cellLocation.getLac() & 0xffff);
-
-
-                textElement.setText("cid=" + new_cid + " lac=" + new_lac);
-            }
-        });
-        // balance inquiry
-        final Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage("211", null, "BILL?", null, null);
-
-
-                //TextView textElement = (TextView) findViewById(R.id.header1);
-                textElement.setText("Message sent!");
-            }
-        });
-
-        // balance inquiry
-        final Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-
-
-                preview.camera.takePicture(shutterCallback, rawCallback,
-                        jpegCallback);
-                textElement.setText("Picture Taken!");
-            }
-        });
-
-
-}
-        */
-
