@@ -2,32 +2,60 @@
 <items version="2" >
 
     <item
-        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/classes-6f4e1283d6a4c28dd9cbf70a428db45ecbed9572.jar" />
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/classes-0ed6ec203c5c4da49ce0470e81177c84fb214dcf.jar" />
     </item>
     <item
         jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-8c8eee103bc2bce34cf6cdadc7371ec94649137f.jar" />
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/internal_impl-23.0.0-8c8eee103bc2bce34cf6cdadc7371ec94649137f.jar" />
     </item>
     <item
-        jar="/Users/lai/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-21bb99bd1718057d7bb27fe4cb83fc3aa7df80b5.jar" />
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/classes-dacaddfbbf5a865b93a4bcab7b842f4fdeb6e10c.jar" />
+    </item>
+    <item
+        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/classes-59262fc8224c170eccfaf96e3a4ce6aa9b24a38d.jar" />
     </item>
     <item
         jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/debug/classes-0a953b898f1dd36aa78d55f978c7609622d8bb66.jar" />
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/classes-0a953b898f1dd36aa78d55f978c7609622d8bb66.jar" />
+    </item>
+    <item
+        jar="/Users/lai/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/support-annotations-23.0.0-21bb99bd1718057d7bb27fe4cb83fc3aa7df80b5.jar" />
+    </item>
+    <item
+        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/classes-6f4e1283d6a4c28dd9cbf70a428db45ecbed9572.jar" />
+    </item>
+    <item
+        jar="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="/Users/lai/AndroidStudioProjects/Wom/app/build/intermediates/pre-dexed/release/classes-1e266691fba445d5d4a698d9c7771bc8c16714f6.jar" />
     </item>
 
 </items>

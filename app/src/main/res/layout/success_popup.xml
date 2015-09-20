@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_centerInParent="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_alignParentEnd="false">
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="211dp"
+            android:text="Your order has been triggered! You will receive SMS notification if successful. Thank you"
+            android:textColor="#0a0a0a"
+            android:focusable="true"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
