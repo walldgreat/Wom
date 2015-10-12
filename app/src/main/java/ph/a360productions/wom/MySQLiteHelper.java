@@ -95,7 +95,9 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 20','Unli All-net texts',' plus 20 minutes of calls to Smart/TNT','20.00','1 day','AT20','2827')");
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 30','Unli All-net texts',' plus 30 minutes of calls to Smart/TNT','30.00','2 days','AT30','2827')");
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All-Net SOS','On-Net OR All-Net SMS','3 SMART-to-SMART/TNT texts with P1.00-airtime 4 texts to all networks with P1.00 airport','','Dial *7572 to avail','2827')");
-
+/**/
+            
+            /**/
 
         }
         catch (Exception e) {
