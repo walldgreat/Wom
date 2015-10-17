@@ -61,6 +61,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         try {
 
             ContentValues values = new ContentValues();
+            /*
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 25','Unlimited calls to Smart/TNT Unlimited texts to Smart/TNT/Sun 50 texts to all networks FREE chat & surf (up to 15MB)','25.00','1 day','UNLI25','6406')");
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 30 Plus','Unlimited calls to Smart/Sun/TNT Unlimited texts to all networks Free Spinnr & Surf (up to 100MB)','30.00','1 day','UNLI30','6406')");
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 35','Unlimited calls and texts to Smart/TNT/Sun 150 texts to all networks','35.00','1 day','UNLI35','6406')");
@@ -95,9 +96,135 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 20','Unli All-net texts',' plus 20 minutes of calls to Smart/TNT','20.00','1 day','AT20','2827')");
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 30','Unli All-net texts',' plus 30 minutes of calls to Smart/TNT','30.00','2 days','AT30','2827')");
             db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All-Net SOS','On-Net OR All-Net SMS','3 SMART-to-SMART/TNT texts with P1.00-airtime 4 texts to all networks with P1.00 airport','','Dial *7572 to avail','2827')");
-/**/
-            
-            /**/
+
+            */
+            db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 30','Call - Smart, TNT, Sun Text - All Networks.; Voice:Yes ; SMS: Yes; DATA: Free Chat/Surf (15 mb)','30','1','UNLI30 ','6406')");
+
+
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 299','Call - Smart, TNT Text - Smart, TNT Free Text 150 - All Networks.; Voice:Yes ; SMS: Yes; DATA: No','299','15','UNLI299 ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 25','Call - Smart, TNT Text - Smart, TNT, Sun Free Text 50 - All Networks.; Voice:Yes ; SMS: Yes; DATA: Free Chat/Surf (15 mb)','25','1','Unli Call & Text 25','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 200','Call - Smart, TNT Text - Smart, TNT Free Text 500 - All Networks.; Voice:Yes ; SMS: Yes; DATA: No','200','7','UNLI200 ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 150','Call - Smart, TNT Text - Smart, TNT Free Text 100 - All Networks.; Voice:Yes ; SMS: Yes; DATA: No','150','7','UNLI150','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 100','Call - Smart, TNT Text - Smart, TNT Free Text 80 - All Networks.; Voice:Yes ; SMS: Yes; DATA:   No','100','4','UNLI100 ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 400','Call - 50 mins Smart, Sun, TNT Text 3000 - All Networks.; Voice:No ; SMS: No; DATA: 35 mb','400','30','TRINET400 ','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 40','Call - Smart, Sun, TNT Text - Smart, Sun, TNT.; Voice:Yes ; SMS: Yes; DATA: Unli FB (mobile)','40','1','TRINET40 ','2949')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 300','Call - 300 min Smart,Sun,TNT Text - Smart,TNT,Sun.; Voice:Yes ; SMS: No; DATA: 30 mb','300','30','TRINET300 ','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 200','Call - 250 min Smart,Sun,TNT Text 1500 - All Networks.; Voice:No ; SMS: No; DATA: 75 mb','200','15','TRINET200 ','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 15','NA.; Voice:NA ; SMS: NA; DATA: NA','15','1','TRINET 15 ','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TRI-NET 100','Text 750 - All Networks Call - 120 mins Smart,Sun,TNT.; Voice:No ; SMS: No; DATA: 35 mb','100','7','TRINET100 ','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','TOTAL 20','Text 20 - All Networks Call - 20 mins Smart, Sun, TNT.; Voice:No ; SMS: No; DATA: No','20','1','TOTAL20','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Super Messaging 10','Not available.; Voice:No ; SMS: No; DATA: Chat, Call via FB Messenger, Viber, WhatsApp, Wechat & Line','10','1','SUPER10 ','9999')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','STICKERTXT','Sending text with stickers.; Voice:No ; SMS: No; DATA: No','NA','NA','STICKERS ','8009')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Smartalk 500','Call - Smart, TNT.; Voice:Yes ; SMS: Yes; DATA: No','500','30','STICKERS','6400')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Smartalk 100','Call - Smart, TNT.; Voice:Yes ; SMS: Yes; DATA: No','100','5','STICKERS','6400')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Lahatxt 30','Call - 20 mins Smart, TNT Text 300 - All Networks.; Voice:No ; SMS: No; DATA: No','30','2','STICKERS','2266')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Lahatxt 20','Call - 10 mins Smart, TNT Text 250 - All Networks.; Voice:No ; SMS: No; DATA: No','20','1','STICKERS ','2266')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Call, Text & Music 15','Text 150 - All Networks Call - 5 mins Smart, TNT.; Voice:No ; SMS: No; DATA: Unli Music streaming Spinnr','15','1','STICKERS ','2266')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Unli Text 50','Text - Smart, TNT, Sun.; Voice:Yes ; SMS: No; DATA: No','50','7','STICKERS ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Unli Text 200','Text - Smart, TNT, Sun.; Voice:Yes ; SMS: No; DATA: No','200','30','STICKERS','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Unli Text 100','Text - Smart, TNT, Sun.; Voice:Yes ; SMS: No; DATA: No','100','15','STICKERS ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Calls 400','Call - 950 mins TNT, Smart.; Voice:No ; SMS: No; DATA: No','400','30','STICKERS ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Big Calls 100','Call - 200 mins TNT, Smart.; Voice:No ; SMS: No; DATA: No','100','7','STICKERS ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All-Net SOS','4 Free text All Networks & 1 peso load.; Voice:No ; SMS: No; DATA: No','5','1','STICKERS','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Smart/TNT SOS','3 Free text Smart/TNT & 1 peso load.; Voice:No ; SMS: No; DATA: No','4','1','STICKERS','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 30','Text - All Networks Call - 30 mins Smart, TNT.; Voice:Yes ; SMS: No; DATA: No','30','2','STICKERS ','2827')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 20','Text - All Networks Call - 20 mins Smart, TNT.; Voice:Yes ; SMS: No; DATA: Free chat & surf','20','1','STICKERS ','2827')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 15','Text 150 - All Networks Call - 5 mins Smart, TNT.; Voice:No ; SMS: No; DATA: No','15','1','STICKERS','2827')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Text 100','Text - All Networks Call 100 minutes Smart, TNT.; Voice:Yes ; SMS: No; DATA: No','100','7','STICKERS','2827')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All In 99','Text - All Networks Call 100 minutes Smart, TNT, Sun.; Voice:Yes ; SMS: No; DATA: 80 MB and Unli Facebook','99','7','STICKERS','2827')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Day Opera Mini 1 Day','Smart, TNT, Infinity.; Voice:No ; SMS: No; DATA: Yes','15','1','STICKERS','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Day Opera Mini 5 Days','Smart, TNT, Infinity.; Voice:No ; SMS: No; DATA: Yes','60','5','STICKERS ','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Day Opera Mini 7 Days','Smart, TNT, Infinity.; Voice:No ; SMS: No; DATA: Yes','80','7','STICKERS','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Day Opera Mini 15 Days','Smart, TNT, Infinity.; Voice:No ; SMS: No; DATA: Yes','160','15','STICKERS ','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All Day Opera Mini 30 Days','Smart, TNT, Infinity.; Voice:No ; SMS: No; DATA: Yes','299','30','STICKERS','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','All-in 25','60 min calls Smart/Tnt/Sun.; Voice:Yes ; SMS: No; DATA: 10 mb','25','1','STICKERS ','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Unli Call & Text 25','unlimited calls to SMART/TNT, unlimited texts to SMART/TNT/SUN, 50 texts to all networks.; Voice:Yes ; SMS: Yes; DATA: FREE chat & surf (up to 15MB)','25','1','STICKERS ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Barkada WeChat ','-.; Voice:No ; SMS: No; DATA: WeChat Messaging*','10','1','STICKERS ','2200')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Barkada ChatAll','-.; Voice:No ; SMS: No; DATA: Chat all to Line, WeChat, WhatsApp and Facebook Messenger','299','30','STICKERS ','2200')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Fb2','-.; Voice:No ; SMS: No; DATA: Unli Facebook','2','1','STICKERS ','6406')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Text P15','-.; Voice:Yes ; SMS: No; DATA: No','15','2','STICKERS ','5867')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Out P15','30 mins TRI-NET calls to 5 Smart/TNT/Sun.; Voice:Yes ; SMS: No; DATA: 10MB, FREE Unli Facebook','15','1','STICKERS ','5867')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Out P25','30 mins TRI-NET calls to 5 Smart/TNT/Sun.; Voice:Yes ; SMS: No; DATA: 10MB, FREE Unli Facebook','25','2','STICKERS ','5867')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SMART','Jump All Out P50','30 mins TRI-NET calls to 5 Smart/TNT/Sun.; Voice:Yes ; SMS: No; DATA: 10MB, FREE Unli Facebook','50','5','STICKERS ','5867')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Unlimited 25','Text - All Network Call - Sun only.; Voice:Yes ; SMS: Yes; DATA: Unlimited Facebook','25','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Unlimited 30','Text - All Network Call - Sun, Smart, TNT.; Voice:Yes ; SMS: Yes; DATA: Unlimited Facebook','30','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Unlimited 100','Text - All Network Call - Sun, Smart, TNT.; Voice:Yes ; SMS: Yes; DATA: Unlimited Facebook','100','5','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Unlimited 150','Text - All Network Call - Sun, Smart, TNT +25 free regular load.; Voice:Yes ; SMS: Yes; DATA: Unlimited Facebook','150','7','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Unlimited 450','Text - All Network Call - Sun, Smart, TNT +50 free regular load.; Voice:Yes ; SMS: Yes; DATA: Unlimited Facebook','450','30','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Combo 10','50 Texts All Networks 50 Texts Sun 10 mins call Sun, Smart, TNT.; Voice:No ; SMS: No; DATA: 10 mins mobile internet','10','1','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Combo 20','100 Text All Networks 100 Texts to Sun 25 mins call Sun, Smart, TNT.; Voice:No ; SMS: No; DATA: No','20','2','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Combo 50','250 Text All Networks 250 Texts to Sun 70 mins call Sun, Smart, TNT.; Voice:No ; SMS: No; DATA: Nonstop Chat (Viber, WeChat, LINE)','50','5','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Combo 150','750 Text All Networks 750 Texts to Sun 250 mins call Sun, Smart, TNT.; Voice:No ; SMS: No; DATA: NO','150','15','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Winner Text 10','Text - Sun only Call - 10 mins Sun, Smart, TNT.; Voice:Yes ; SMS: No; DATA: 10 mins mobile internet','10','1','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text Unlimited 20','Text - Sun only Call - 20 mins Sun only.; Voice:Yes ; SMS: No; DATA: No','20','2','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text Unlimited 50','Text - Sun only Call - 60 mins Sun only.; Voice:Yes ; SMS: No; DATA: No','50','7','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text Unlimited 60','Text - Sun only Call - 60 mins Sun, Smart, TNT 200 Free Texts All Networks.; Voice:Yes ; SMS: No; DATA: No','60','7','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text Unlimited 150','Text - Sun only Call - 40 hours Sun only.; Voice:Yes ; SMS: No; DATA: No','150','30','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Power Text Unlimited 200','Text - Sun only Call - 40 hours Sun only 1000 text All Networks.; Voice:Yes ; SMS: No; DATA: No','200','30','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text Unlimited 300','Text - Sun only Call - 5 hours Sun, Smart, TNT 1500 Free Texts All Networks.; Voice:Yes ; SMS: No; DATA: No','300','30','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text All 15','Text - All Networks.; Voice:Yes ; SMS: No; DATA: Unlimited Facebook','15','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text All 20','Text - All Networks.; Voice:Yes ; SMS: No; DATA: No','20','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text All 30','Text - All Networks.; Voice:Yes ; SMS: No; DATA: Unlimited Facebook','30','3','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text All Plus 25','Text - All Networks Call - 60 mins Sun call only.; Voice:Yes ; SMS: No; DATA: 30 mins mobile internet','25','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Text All Plus 100','Text - All Networks Call - 60 mins Sun call only.; Voice:Yes ; SMS: No; DATA: 60 mins mobile internet','100','7','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Unli Trio 20','Text - Sun, Smart, TNT.; Voice:Yes ; SMS: No; DATA: Unlimited Facebook','20','2','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Unli Trio 30','Text - Sun, Smart, TNT Call - 30 mins call Sun, TNT, Smart.; Voice:Yes ; SMS: No; DATA: Unlimited Facebook','30','3','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Call & Text Combo 10','50 Sun Texts 50 Text to All Networks 10 mins call Smart, Sun, TNT.; Voice:No ; SMS: No; DATA: 10 mins of mobile internet + 1Day music streaming at Spinnr & 1 free song download','15','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Winner Text 10 + Spinnr','Text - Sun only Call - 10 mins Smart, Sun, TNT.; Voice:Yes ; SMS: No; DATA: 10 mins of mobile internet + 1Day music streaming at Spinnr & 1 free song download','15','1','STICKERS','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'SUN','Sun Call Text & Music 15','Text 150 - All networks Call - 5 mins Sun only.; Voice:No ; SMS: No; DATA: 1 Day FREE Music Streaming ','15','1','STICKERS ','247')");
+db.execSQL("INSERT INTO offers VALUES(null ,'0','Promo Name','Unlimited.; Voice:Text ; SMS: Call; DATA: Internet','Cost (Pesos)','Validity day[s]','STICKERS ','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan Txt 10','No.; Voice:100 SMS/ MMS to TNT/Smart, +10 SMS to All Networks ; SMS: No; DATA: No','10','1','STICKERS ','8855')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan Txt 20','No.; Voice:200 Texts to All Networks ; SMS: No; DATA: No','20','2','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unli Txt 10','Yes (Text).; Voice:Unlitext to TNT/Smart ; SMS: No; DATA: No','10','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Sangka tutex 15','No.; Voice:2 Days 200 Texts to TNT/Smart ; SMS: No; DATA: No','15','2','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Sangka tutex 60','No.; Voice:7 Days 1000 Texts to TNT/Smart ; SMS: No; DATA: No','60','7','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unli Txt 150','Yes (Text).; Voice:Unlitext to TNT/Smart ; SMS: No; DATA: No','150','30','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Sangka tutok 15','No.; Voice:No ; SMS: 20 Mins Call to TNT/Smart; DATA: No','15','2','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Sangka tutok 30','No.; Voice:No ; SMS: 45 Mins Call to TNT/Smart; DATA: No','30','4','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Patok-O-Tex15','No.; Voice:P0.50  Text Rate to TNT/Smart ; SMS: P0.50 Call Rate to TNT/Smart; DATA: No','15','1','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Patok-O-Tex20','No.; Voice:P0.50  Text Rate to TNT/Smart ; SMS: P0.50 Call Rate to TNT/Smart; DATA: No','20','1','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Patok- O-Tex 30','No.; Voice:P0.50  Text Rate to TNT/Smart ; SMS: P0.50 Call Rate to TNT/Smart; DATA: No','30','2','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan ALL-IN-ONE 20','No.; Voice:200 Texts to All Networks ; SMS: + 20mins Call to TNT/Smart; DATA: No','20','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan ALL-IN-ONE 30','No.; Voice:300 Texts to All Networks ; SMS: + 30 Minutes Call to TNT/Smart; DATA: No','30','2','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan ALL-IN-ONE 55','No.; Voice:550 Texts to All Networks ; SMS: + 55mins Call to TNT/Smart; DATA: No','55','3','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan ALL-IN-ONE 99','No.; Voice:990 Texts to All Networks ; SMS: + 80 Minutes Call to TNT/Smart; DATA: No','99','7','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan ALL-IN-ONE 15','No.; Voice:150 Texts to All Networks ; SMS: + 15mins Call to TNT/Smart; DATA: No','15','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unlitext Extra 30','Yes (Text).; Voice: Unlitext to TNT/Smart ; SMS: 15mins Call to TNT/Smart; DATA: No','30','3','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Piso FB','No.; Voice:No ; SMS: No; DATA: Mobile FB','1','10mins (1.3mb cap)','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','FB 5','No.; Voice:No ; SMS: No; DATA: Mobile FB','5','6hrs (8.4mb cap)','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','FB Mobile App','Unli FB.; Voice:No ; SMS: No; DATA: FB via FB Mobile App','at least 1 peso load','1','STICKERS','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Smart Net','Unli FB & Twitter updates.; Voice:No ; SMS: No; DATA: Free Unli Social','at least 1 peso load','NA','STICKERS ','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Yahoo Unli','Unli YM .; Voice:No ; SMS: No; DATA: YahooMail & Messenger (mobile browser)','15','1','STICKERS','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unli Surf','Unli.; Voice:No ; SMS: No; DATA: Mobile Browsing to all sites','50','1','STICKERS','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unlitxt 2 ALL 300','Yes (Text).; Voice:Unlitext to All Networks ; SMS: No; DATA: No','300','30','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Flexi 50','No.; Voice:5 Int'l Text or IDD Minutes ; SMS: 5 Int'l Text or IDD Minutes; DATA: No','50','NA','STICKERS','433')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Flexi 30','No.; Voice:6 Int'l Text or IDD Minutes ; SMS: 6 Int'l Text or IDD Minutes; DATA: No','30','NA','STICKERS ','433')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Kamus Text','No.; Voice:50 International Texts or All Networks ; SMS: NA; DATA: No','20','NA','STICKERS','433')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','3p IDD','No.; Voice: ; SMS: IDD Calls; DATA: No','3 pesos permin','NA','STICKERS','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unlitxt ALL +Unli Tropa Call','Yes.; Voice:Unli Text ; SMS: Unli Call TNT; DATA: ','20','10PM-10AM & 12NN-6PM','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Katok- At-Tex25','Unli for 2!.; Voice:Unli Text ; SMS: Unli Call; DATA: ','25','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','TriNet 300','Unli (Text).; Voice:Trinet Texts TNT/Smart/ Sun ; SMS: + 300mins of Calls to TNT/Smart/ Sun; DATA: + 30 MB Internet','300','30','STICKERS','2477')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Araw Araw Load 30','Yes (Text).; Voice:Unlitext ; SMS: + 30 Minutes of Calls; DATA: +30 Minutes Internet','30','3','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan Unli Trio Plus','Yes (Text).; Voice:Unlitext TNT/Smart/ Sun ; SMS: + 10mins Calls to TNT/Smart; DATA: No','15','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Nokia Express Browsing','Yes (Browsing).; Voice:No ; SMS: No; DATA: FB, Twitter, Email & More! (Nokia Express)','15','1','STICKERS ','211')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','5=15 Minutes','No.; Voice:No ; SMS: No; DATA: Internet browsing','5','15min','STICKERS ','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Pisonet Sampler','No.; Voice:No ; SMS: No; DATA: 1 peso = 5hrs net','1','2','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unlitxt 2 ALL 20','Yes (Text).; Voice:Unlitext to All Networks ; SMS: No; DATA: No','20','2','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Always On 30','No.; Voice:30 Free TNT/Smart/ Sun Sms ; SMS: No; DATA: 70 MB','30','1','STICKERS','2200')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Always On 20','No.; Voice:20 Free TNT/Smart/ Sun Sms ; SMS: No; DATA: 45 MB','20','1','STICKERS ','2200')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','FB 2','Yes (FB net).; Voice:No ; SMS: No; DATA: Unli FB','2','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unlitext Plus 10','Yes (Text).; Voice:UnliText TNT/Smart/ Sun ; SMS: No; DATA: No','10','1','STICKERS ','3545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unlitxt Plus 20','Yes (Text, FB).; Voice:UnliText TNT/Smart/ Sun ; SMS: 30 Minutes Calls to TNT/Smart/ Sun; DATA: Unli FB','20','2','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Extra','No.; Voice:Just add 5 pesos to your current promo to extend ; SMS: Just add 5 pesos to your current promo to extend; DATA: No','5','extend','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Chat Text','NA.; Voice:Group Messaging ; SMS: NA; DATA: NA','NA','NA','STICKERS','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Sticker Text','NA.; Voice:contextual & download stickers texting ; SMS: NA; DATA: NA','NA','NA','STICKERS ','0')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Unli Talk and Text 20','Yes (Text, Call).; Voice:Unlitext Smart/TNT ; SMS: Unlicall Smart/TNT; DATA: No','20','1','STICKERS ','4547')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Gaan Unlitext Plus 15','Yes (Text, FB).; Voice:Unlitext to TNT/Smart/ Sun ; SMS: +30 Minutes call to TNT/Smart/ Sun; DATA: UNLI FB','15','1','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','Piso Unlitext','Yes (Text).; Voice:Unlitext sa TNT/ Smart! ; SMS: No; DATA: No','1','30 min','STICKERS ','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','PisoNet','Yes (FB, Twitter).; Voice:No ; SMS: No; DATA: Unli FB, Twitter (mobile)','1','10 min','STICKERS','4545')");
+db.execSQL("INSERT INTO offers VALUES(null ,'TNT','UTP10*','Yes (FB, Twitter).; Voice:Yes (Unli) ; SMS: +30 min call (TNT/Smart/Sun); DATA: 30mb internet','10','1 day','STICKERS ','4505')");
+
+
 
         }
         catch (Exception e) {
